@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/Main/main",
-    "pages/Service/service"
+    "pages/Service/service",
+    "Modules/Circle-progress/circle-progress"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,19 +12,19 @@
     "backgroundColor": "#ff00ff",
     "enablePullDownRefresh": true
   },
-
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/Main/main",
-      "text": "Main"
-    },{
-      "pagePath": "pages/Service/service",
-      "text": "Service"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/Main/main",
+        "text": "Main"
+      },
+      {
+        "pagePath": "pages/Service/service",
+        "text": "Service"
+      }
+    ]
   },
-
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-   "entryPagePath": "pages/Main/main"
+  "entryPagePath": "pages/Main/main"
 }
-

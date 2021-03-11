@@ -1,2 +1,24 @@
 <!--pages/index/main.wxml-->
-<text>pages/index/main.wxml</text>
+
+<!-- icon : success, success_no_circle, info, warn, waiting, cancel, download, search, clear -->
+<icon style="background:grey;" type="success" size="40px"/>
+<icon type="success_no_circle" size="40px"></icon>
+
+<!-- 图文混排 -->
+<view style="font-size:17px">
+  文本文本
+  <icon type="success" size="30"></icon>
+  文本文本
+</view>
+
+<!-- progress -->
+<view>进度条</view>
+<progress percent="80" active show-info="true" style="color:red; margin-right:10px" />
+<!-- .wx-progress-info {
+color:red;
+margin-left:10px;
+} -->
+<progress show-info="{{true}}" bindtap="onTapProgressBar" stroke-width="2" percent="{{percentValue}}" backgroundColor="#f2f2f2" active-mode="forwards" active="{{true}}" bindactiveend="onProgressActionEnd"/>
+<button bindtap="onTapReloadBtn">重新加载</button>
+
+<circle-progress></circle-progress>

@@ -5,9 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    percentValue : 0
   },
 
+  onTapProgressBar(e) {
+    console.log(e)
+    let progress = this.data.percentValue
+    if (progress < 100) {
+      progress += 5
+      this.setData({percentValue:Math.min(100, progress)})
+    }
+  },
+  onProgressActionEnd(e) {
+    console.log(e)
+  },
+
+  onTapReloadBtn(e){
+    this.setData({percentValue:0})
+    this.setData({percentValue:50})
+  },
+   
+  
   /**
    * 生命周期函数--监听页面加载
    */
