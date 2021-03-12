@@ -1,0 +1,3 @@
+<!--Modules/custom-text/custom-text.wxml-->
+<text class="red-class">red text</text>
+<text class="blue-class">blue text</text>

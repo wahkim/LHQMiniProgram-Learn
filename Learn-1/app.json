@@ -2,7 +2,8 @@
   "pages": [
     "pages/Main/main",
     "pages/Service/service",
-    "Modules/Circle-progress/circle-progress"
+    "Modules/Circle-progress/circle-progress",
+    "Modules/custom-text/custom-text"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +25,6 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "entryPagePath": "pages/Main/main"
 }

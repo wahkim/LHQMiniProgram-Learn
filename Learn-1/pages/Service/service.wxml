@@ -1,2 +1,7 @@
 <!--pages/service.wxml-->
-<text>pages/service.wxml</text>
+<button id="button-1" type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+  disabled="{{disable}}" bindtap="default" hover-class="other-button-hover">按钮</button>
+<button id="button-2" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+  disabled="{{disable}}" bindtap="default" hover-class="other-button-hover">按钮</button>
+<button id="button-3" type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disable}}"
+  bindtap="default" hover-class="other-button-hover">按钮</button>

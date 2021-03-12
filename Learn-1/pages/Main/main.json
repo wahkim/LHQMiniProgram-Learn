@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "circle-progress" : "/Modules/Circle-progress/circle-progress"
+    "circle-progress" : "/Modules/Circle-progress/circle-progress",
+    "red-text" : "/Modules/custom-text/custom-text"
   }
 }

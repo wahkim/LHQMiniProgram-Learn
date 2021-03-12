@@ -5,7 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
+    defaultSize : 'default', 
+    primarySize : 'default', 
+    warnSize : 'default', 
+    disable : false, // 是否禁用
+    plain : false, // 按钮是否镂空，背景色透明
+    loading : false, // 名称前是否带 loading 图标
+  },
 
+  default: function(e){
+    // console.log(e)
+    let buttonId = e.target.id
+    var type = 'default'
+    if (buttonId == 'button-1') {
+      type = 'default'
+  } else if (buttonId == 'button-2') {
+      type = 'primary'
+  } else {
+      type = 'warn'
+  }
+      var key = type + 'Size'
+      var changedData = {}
+      changedData[key] =
+        this.data[key] === 'default' ? 'mini' : 'default'
+      this.setData(changedData)
   },
 
   /**
